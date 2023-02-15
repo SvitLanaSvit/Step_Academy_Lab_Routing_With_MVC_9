@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h3>LINK:</h3>
+    <a href="/NewOrder">NewOrder</a>
+    <a asp-controller="Shop" asp-action="Buy" class="btn btn-sm btn-primary">NewOrder_Tag_Helper</a>
+    <a asp-controller="Home" asp-action="Error" class="btn btn-sm btn-info">Home/Error</a>
+    <a href="/home/privacy" class="btn btn-sm btn-danger">Home/Privacy_ERROR</a>
+    <a href="/admin/index" class="btn btn-sm btn-danger">Admin/Index_ERROR</a>
+    <a asp-controller="Admin" asp-action="IndexSetup" class="btn btn-sm btn-info">Admin/IndexSetup</a>
+    <a asp-controller="User" asp-action="Settings" asp-route-id=5 class="btn btn-sm btn-info">User/Setting/5</a>
+    <a href="/user/settings/1000" class="btn btn-sm btn-danger">User/Setting/1000_ERROR</a>
+    <a asp-controller="User" asp-action="Settings" asp-route-id=999 class="btn btn-sm btn-primary">User/Setting/999</a>
+
+</div>
